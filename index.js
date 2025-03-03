@@ -4,7 +4,7 @@ const number = document.getElementById("number");
 const symbol = document.getElementById("symbol");
 const generate = document.getElementById("generate");
 let generatedPassword = document.getElementById("generatedPassword")
-const passwordLength = 12;
+let passwordLengthInput = document.getElementById("passwordLengthInput")
 
 
 function generatePassword(){
@@ -18,6 +18,8 @@ function generatePassword(){
 
         let chars = ""
         let password =""
+
+       passwordLength  = passwordLengthInput.value
 
         if(lowerCase.checked){
             chars = chars + lowercase;
@@ -43,7 +45,7 @@ function generatePassword(){
         else{
             chars = chars;
         }
-        for(i = 0; i < 12; i++){
+        for(i = 0; i < passwordLength; i++){
             let randomIndex = Math.floor(Math.random() * chars.length);
             randomChar = chars[randomIndex]
             password = password + randomChar
