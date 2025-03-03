@@ -1,0 +1,43 @@
+#body{
+    text-align: center;
+}
+#container{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+#title{
+    font-size: 3em;
+    color: hsl(157, 99%, 29%);
+    font-weight: bold;
+}
+#selection{
+    font-size: 2em;
+    margin-left: -200px;
+    font-style: italic;
+}
+label{
+    font-size: 1.5em;
+}
+#generate{
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(0, 84%, 65%);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#generate:hover{
+    background-color: hsl(0, 84%, 75%);
+}
+#generatedPassword{
+    font-size: 2em;
+    background-color: rgb(235, 235, 105);
+    max-width: 300px;
+    margin: auto;
+    border-radius: 5px;
+
+}
